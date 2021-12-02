@@ -46,7 +46,7 @@ const styles = {
 
 const BillForm = () => {
 	const [ formState, setFormState ] = useState({ price: defaultPrice, tip: defaultTip });
-	const [ totalPrice, setTotalPrice ] = useState();
+	const [ totalPrice, setTotalPrice ] = useState(0);
 	const [ priceCalculated, setPriceCalculated ] = useState(false);
 
 	const onFormChanged = (e) => {
